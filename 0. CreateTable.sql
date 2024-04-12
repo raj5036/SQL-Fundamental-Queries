@@ -15,6 +15,15 @@ CREATE TABLE persons(
 	PRIMARY KEY(id)
 );
 
+-- FOREIGN KEY constraint
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+
 -- Create TABLE as a copy of another TABLE
 -- The following SQL creates a new table called "TestTables" (which is a copy of the "Customers" table):
 CREATE TABLE TestTable AS
