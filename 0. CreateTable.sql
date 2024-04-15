@@ -2,8 +2,11 @@
 CREATE TABLE persons(
 	id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255),
+	email VARCHAR(100),
 	age INT,
-	isPaidCustomer BOOLEAN
+	isPaidCustomer BOOLEAN,
+	PRIMARY KEY(id),
+	UNIQUE(email)
 );
 
 -- Create a TABLE with defined KEYS
