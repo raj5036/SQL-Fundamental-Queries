@@ -32,3 +32,10 @@ CREATE TABLE Orders (
 CREATE TABLE TestTable AS
 SELECT customername, contactname
 FROM customers;
+
+-- Create Index
+CREATE INDEX idx_lastname
+ON persons(lastname);
+
+DROP INDEX idx_lastname
+on Persons;

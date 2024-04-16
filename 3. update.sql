@@ -10,3 +10,6 @@ ALTER TABLE Persons RENAME COLUMN old_name to new_name;
 
 -- Drop a column
 ALTER TABLE Persons DROP COLUMN country;
+
+-- Rename a Table    
+ALTER TABLE user RENAME TO users;
