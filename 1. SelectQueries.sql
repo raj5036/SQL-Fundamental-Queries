@@ -35,7 +35,7 @@ select * from persons where age between 20 and 60;
 */
 
 SELECT * FROM Persons WHERE name LIKE 'R%'; -- name must start with 'R'
-SELECT * FROM Persons WHERE name LIKE 'R__%%%'; -- name must start with 'R' and have at least 3 characters
+SELECT * FROM Persons WHERE name LIKE 'R__%'; -- name must start with 'R' and have at least 3 characters
 SELECT * FROM Customers WHERE city LIKE '%L%'; --Return all customers from a city that contains the letter 'L'
 SELECT * FROM Customers WHERE CustomerName LIKE '%a'; --Return all customers that ends with 'a'
 
